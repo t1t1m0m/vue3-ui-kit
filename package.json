@@ -1,0 +1,22 @@
+{
+  "name": "prism-ui",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Prism UI — a small, typed Vue 3 component library and its documentation/showcase site.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.5.12",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8",
+    "vue-tsc": "^2.1.6"
+  }
+}

@@ -1,0 +1,130 @@
+/* ============================================================
+   Prism UI — design tokens
+   All colors, spacing, radii, shadows and type are expressed
+   as CSS custom properties so the whole system re-themes from
+   a single [data-theme] switch.
+   ============================================================ */
+
+:root,
+[data-theme='light'] {
+  /* Surfaces & ink */
+  --color-canvas: #ffffff;
+  --color-surface: #f4f5f8;
+  --color-surface-raised: #ffffff;
+  --color-ink: #16181d;
+  --color-muted: #6b7280;
+  --color-border: #e6e8ee;
+  --color-border-strong: #d3d7e0;
+
+  /* Brand */
+  --color-primary: #5b3df5;
+  --color-primary-hover: #4a2fe0;
+  --color-primary-soft: #ede9ff;
+  --color-primary-ink: #ffffff;
+
+  /* Accent — used sparingly */
+  --color-accent: #ff9e7d;
+
+  /* Feedback */
+  --color-success: #16a36a;
+  --color-success-soft: #e2f5ec;
+  --color-warning: #d98a00;
+  --color-warning-soft: #fdf1dc;
+  --color-danger: #e5484d;
+  --color-danger-hover: #d43a3f;
+  --color-danger-soft: #fce8e8;
+  --color-info: #5b3df5;
+  --color-info-soft: #ede9ff;
+
+  /* One reserved hero gradient */
+  --gradient-hero: linear-gradient(120deg, #5b3df5 0%, #7c5cf7 45%, #ff9e7d 100%);
+
+  /* Elevation */
+  --shadow-sm: 0 1px 2px rgba(16, 18, 29, 0.06), 0 1px 1px rgba(16, 18, 29, 0.04);
+  --shadow-md: 0 4px 12px rgba(16, 18, 29, 0.08), 0 2px 4px rgba(16, 18, 29, 0.05);
+  --shadow-lg: 0 18px 48px rgba(16, 18, 29, 0.16), 0 6px 16px rgba(16, 18, 29, 0.08);
+  --shadow-focus: 0 0 0 3px rgba(91, 61, 245, 0.35);
+
+  /* Checkerboard for preview panels */
+  --checker: #eef0f5;
+}
+
+[data-theme='dark'] {
+  --color-canvas: #0e0f14;
+  --color-surface: #16181f;
+  --color-surface-raised: #1c1f28;
+  --color-ink: #f3f4f8;
+  --color-muted: #9aa1b1;
+  --color-border: #262a35;
+  --color-border-strong: #333846;
+
+  --color-primary: #7c5cf7;
+  --color-primary-hover: #9075f9;
+  --color-primary-soft: #241d4a;
+  --color-primary-ink: #ffffff;
+
+  --color-accent: #ff9e7d;
+
+  --color-success: #35c98a;
+  --color-success-soft: #10261d;
+  --color-warning: #e6a52c;
+  --color-warning-soft: #2a2210;
+  --color-danger: #f2696d;
+  --color-danger-hover: #f4807f;
+  --color-danger-soft: #2b1416;
+  --color-info: #7c5cf7;
+  --color-info-soft: #241d4a;
+
+  --gradient-hero: linear-gradient(120deg, #5b3df5 0%, #7c5cf7 45%, #ff9e7d 100%);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 22px 55px rgba(0, 0, 0, 0.6);
+  --shadow-focus: 0 0 0 3px rgba(124, 92, 247, 0.45);
+
+  --checker: #1b1e27;
+}
+
+:root {
+  /* Type */
+  --font-display: 'Space Grotesk', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-base: 0.9375rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.5rem;
+  --text-4xl: 3.25rem;
+
+  /* Spacing scale (4px base) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-pill: 999px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 120ms;
+  --dur: 200ms;
+
+  /* Layout */
+  --sidebar-w: 264px;
+  --topbar-h: 64px;
+  --content-max: 880px;
+}
